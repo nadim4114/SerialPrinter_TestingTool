@@ -1,0 +1,14 @@
+﻿<Window x:Class="POSPrinterExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="POS Printer Example" Height="480" Width="600">
+    <Grid>
+        <Label Content="COM Port" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Height="73" Width="222" FontSize="40"/>
+        <ComboBox x:Name="cmbComPort" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,23,0,0" Width="208" Height="47" FontSize="30" FontWeight="Bold"/>
+        <Label Content="Baud Rate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,124,0,0" Height="73" Width="204" FontSize="40"/>
+        <TextBox x:Name="txtBaudRate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,132,0,0" Width="208" Height="58" FontSize="30" FontWeight="Bold"/>
+        <Button Content="Print" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,257,0,0" Width="208" Click="btnPrint_Click" Height="54" FontSize="40"/>
+        <Label Content="Test Print" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,248,0,0" Height="72" Width="204" FontSize="40"/>
+        <Label Content="This will print some test  characters from your serial printer" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,362,0,0" Height="41" Width="572" FontSize="20"/>
+    </Grid>
+</Window>
